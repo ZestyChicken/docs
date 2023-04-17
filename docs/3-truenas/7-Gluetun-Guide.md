@@ -35,7 +35,7 @@ https://github.com/qdm12/gluetun/wiki/Windscribe)
 ![VPN Gluetun 3](img/Gluetun-Wireguard-Mulvad.png)
 
 - The example here uses Mulvad. There is excellent information on creating your Mulvad configuration for Gluetun here (https://github.com/qdm12/gluetun/wiki/Mullvad).
-- "VPN_SERVICE_PROVIDER" will be "mullvad" and VPN_TYPE is "wireguard". The WIREGUARD_PRIVATE_KEY and WIREGUARD_ADDRESSES will be stored in your configuration file (e.g. us-###-wg-###.conf) and can be retrived from there. Note the WIREGUARD_ADDRESSES is in CIDR notation (e.g. /32 at end of IP address).
+- "VPN_SERVICE_PROVIDER" will be "mullvad" and VPN_TYPE is "wireguard". The WIREGUARD_PRIVATE_KEY and WIREGUARD_ADDRESSES will be stored in your configuration file (e.g. us-###-wg-###.conf) and can be retrieved from there. Note the WIREGUARD_ADDRESSES is in CIDR notation (e.g. /32 at end of IP address).
 
 ## Verify it works
 
