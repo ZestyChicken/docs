@@ -22,13 +22,20 @@ Basic setup of the [TrueCharts](https://www.truecharts.org) [Gluetun](https://gi
     - `DOT`: Enter `off`
     - `DNS_KEEP_NAMESERVER`: `on`
 
--  VPN Provider specific Env Vars
+-  OpenVPN Provider specific Env Vars
 
 ![VPN Gluetun 2](img/Gluetun-VPN2.png)
 
 - All providers will generally need `VPN_SERVICE_PROVIDER` and `VPN_TYPE`, for me it's `Windscribe` and `openvpn` but I could easily choose `Wireguard`
 - Scroll to the [Gluetun Wiki](https://github.com/qdm12/gluetun/wiki) and find your specific provider and enter their info, eg [Windscribe Wiki Page](
 https://github.com/qdm12/gluetun/wiki/Windscribe)
+
+- Wireguard Provider specific Env Vars
+
+![VPN Gluetun 3](img/Gluetun-VPN3.png)
+
+- The example here uses Mulvad. There is excellent information on creating your Mulvad configuration for Gluetun here (https://github.com/qdm12/gluetun/wiki/Mullvad).
+- "VPN_SERVICE_PROVIDER" will be "mullvad" and VPN_TYPE is "wireguard". The WIREGUARD_PRIVATE_KEY and WIREGUARD_ADDRESSES will be stored in your configuration file (e.g. us-###-wg-###.conf) and can be retrived from there. Note the WIREGUARD_ADDRESSES is in CIDR notation (e.g. /32 at end of IP address).
 
 ## Verify it works
 
